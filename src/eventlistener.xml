@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE data SYSTEM "http://www.woltlab.com/DTDs/eventListeners.dtd">
+<data>
+	<import>
+		<eventListener>
+			<eventClassName>wcf\system\bbcode\MessageParser</eventClassName>
+			<eventName>beforeParsing,afterParsing</eventName>
+			<inherit>1</inherit>
+			<listenerClassFile>wcf\system\event\listener\GWBBCodeParserListener</listenerClassFile>
+		</eventListener>
+		<eventListener>
+			<eventClassName>wcf\system\bbcode\SimpleMessageParser</eventClassName>
+			<eventName>beforeParsing,afterParsing</eventName>
+			<inherit>1</inherit>
+			<listenerClassFile>wcf\system\event\listener\GWBBCodeParserListener</listenerClassFile>
+		</eventListener>
+	</import>
+</data>
