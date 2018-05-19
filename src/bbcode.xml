@@ -6,22 +6,5 @@
 			<sourcecode>0</sourcecode>
 			<classname>wcf\system\bbcode\ExpanderBBCode</classname>
 		</bbcode>
-		<bbcode name="build">
-			<isBlockElement>1</isBlockElement>
-			<sourcecode>0</sourcecode>
-			<classname>wcf\system\bbcode\GWBuildBBCode</classname>
-		</bbcode>
-		<bbcode name="skill">
-			<isBlockElement>0</isBlockElement>
-			<sourcecode>0</sourcecode>
-			<classname>wcf\system\bbcode\GWSkillBBCode</classname>
-			<attributes>
-				<attribute name="0">
-					<required>0</required>
-					<usetext>0</usetext>
-					<validationpattern>^([\d]+)$</validationpattern>
-				</attribute>
-			</attributes>
-		</bbcode>
 	</import>
 </data>
