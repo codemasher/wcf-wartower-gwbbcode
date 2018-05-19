@@ -24,7 +24,7 @@ class GW1SimpleMessageParser extends SimpleMessageParser {
 		$gwbboptions = new GW1DBOptions([
 			'outputInterface'           => GWBBOutput::class,
 				'parserMiddlewareInterface' => GWBBMiddleware::class,
-				'sanitizeInput'             => true,
+				'sanitizeInput'             => false,
 				'preParse'                  => true,
 				'postParse'                 => true,
 				'language'                  => '[LANG FROM WCF OPTIONS]',
