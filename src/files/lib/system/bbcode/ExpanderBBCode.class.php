@@ -19,9 +19,9 @@ class ExpanderBBCode extends AbstractBBCode{
 	 */
 	public function getParsedTag(array $openingTag, $content, array $closingTag, BBCodeParser $parser) {
 
-		// @todo attributes: description
+		// @todo: attributes, description, js-eventlistener
 
-		return '<div class="wcf-expander-header">expander-head</div><div class="wcf-expander-body">'.$content.'</div>';
+		return '<div class="wcf-expander-header">expander</div><div class="wcf-expander-body">'.$content.'</div>';
 	}
 
 }

@@ -1,0 +1,16 @@
+{
+    "minimum-stability": "dev",
+    "config": {
+        "vendor-dir": "./",
+        "prepend-autoloader": false
+    },
+    "require": {
+        "ezyang/htmlpurifier": "4.9.*",
+        "erusev/parsedown": "1.6.*",
+        "pelago/emogrifier": "1.2.x-dev",
+        "chrisjean/php-ico": "1.0.*",
+        "true/punycode": "~2.0",
+        "pear/net_idna2": "^0.2.0",
+        "codemasher/gw1-database": "dev-master"
+    }
+}
