@@ -10,10 +10,11 @@
  */
 
 namespace wcf\system\event\listener;
-
+/*
 use chillerlan\BBCode\BBCode;
 use chillerlan\GW1DB\GW1DBOptions;
 use chillerlan\GW1DB\GWBBCode\GWBBOutput;
+*/
 
 # INSERT INTO `wcf1_event_listener` (`listenerID`, `packageID`, `environment`, `listenerName`, `eventClassName`, `eventName`, `listenerClassName`, `inherit`, `niceValue`, `permissions`, `options`) VALUES
 # (NULL, '3', 'user', 'preParseGWBBCode', 'wcf\\system\\bbcode\\MessageParser', 'beforeParsing', 'wcf\\system\\event\\listener\\GWBBPreParser', '1', '0', '', ''),
@@ -26,7 +27,7 @@ abstract class GWBBAbstractListener implements IParameterizedEventListener{
 	protected $gwBBCode;
 
 	public function __construct(){
-
+/*
 		$gwBBCodeOptions = new GW1DBOptions([
 			'outputInterface'  => GWBBOutput::class,
 			'sanitizeInput'    => false, // input should be sanitized at this point by WCF
@@ -35,5 +36,6 @@ abstract class GWBBAbstractListener implements IParameterizedEventListener{
 		]);
 
 		$this->gwBBCode = new BBCode($gwBBCodeOptions);
+*/
 	}
 }
