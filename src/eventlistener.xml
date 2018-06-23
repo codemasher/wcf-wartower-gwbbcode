@@ -2,26 +2,14 @@
 <data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/eventListener.xsd">
 	<import>
 		<eventListener name="preParseGWBBCode">
-			<eventClassName>wcf\system\bbcode\MessageParser</eventClassName>
-			<eventName>beforeParsing</eventName>
+			<eventClassName>wcf\system\html\input\node\HtmlInputNodeProcessor</eventClassName>
+			<eventName>beforeProcess</eventName>
 			<inherit>1</inherit>
 			<listenerClassFile>wcf\system\event\listener\GWBBPreParser</listenerClassFile>
 		</eventListener>
 		<eventListener name="postParseGWBBCode">
-			<eventClassName>wcf\system\bbcode\MessageParser</eventClassName>
-			<eventName>afterParsing</eventName>
-			<inherit>1</inherit>
-			<listenerClassFile>wcf\system\event\listener\GWBBPostParser</listenerClassFile>
-		</eventListener>
-		<eventListener name="preSimpleParseGWBBCode">
-			<eventClassName>wcf\system\bbcode\SimpleMessageParser</eventClassName>
-			<eventName>beforeParsing</eventName>
-			<inherit>1</inherit>
-			<listenerClassFile>wcf\system\event\listener\GWBBPreParser</listenerClassFile>
-		</eventListener>
-		<eventListener name="postSimpleParseGWBBCode">
-			<eventClassName>wcf\system\bbcode\SimpleMessageParser</eventClassName>
-			<eventName>afterParsing</eventName>
+			<eventClassName>wcf\system\html\input\node\HtmlInputNodeProcessor</eventClassName>
+			<eventName>afterProcess</eventName>
 			<inherit>1</inherit>
 			<listenerClassFile>wcf\system\event\listener\GWBBPostParser</listenerClassFile>
 		</eventListener>
